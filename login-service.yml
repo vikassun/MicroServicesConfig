@@ -3,7 +3,7 @@ spring:
     name: login-service
 
 server: 
-  port: 8088
+  port: 3333
 
 eureka:
   client:
