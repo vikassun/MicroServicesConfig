@@ -11,10 +11,14 @@ zuul:
       login-service:
         path: /login-service/**
         serviceId:  LOGIN-SERVICE
-
+        
 eureka:
+  instance:
+    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://localhost:8088/eureka
+    register-with-eureka: false
+    fetch-registry: false
 
                 
